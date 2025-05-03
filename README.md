@@ -121,6 +121,8 @@ information on what to include when reporting a bug.
 
 ## Changelog since 3.4
 
+ - Added `glfwGetMonitorFromWindow` function to query the monitor where the
+   largest part of a window is currently located (#1699)
  - Added `GLFW_UNLIMITED_MOUSE_BUTTONS` input mode that allows mouse buttons beyond
    the limit of the mouse button tokens to be reported (#2423)
  - Updated minimum CMake version to 3.16 (#2541)

@@ -950,6 +950,19 @@ glfwSetWindowIcon(window, 0, NULL);
 ```
 
 
+### Window monitor {#window_monitor_from}
+
+Windows are always located on one or more monitors. You can get the
+handle for the monitor were the biggest part of a specified window is 
+currently located with @ref glfwGetMonitorFromWindow
+
+```c
+GLFWmonitor* monitor = glfwGetMonitorFromWindow(window);
+```
+
+This monitor handle is one of those returned by @ref glfwGetMonitors.
+
+
 ### Window monitor {#window_monitor}
 
 Full screen windows are associated with a specific monitor.  You can get the
