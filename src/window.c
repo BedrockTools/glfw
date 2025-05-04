@@ -1054,7 +1054,7 @@ GLFWAPI GLFWmonitor* glfwGetMonitorFromWindow(GLFWwindow* window)
             monitorRect.w = vidmode->width;
             monitorRect.h = vidmode->height;
 
-            scratchRect = _get_intersection(&windowRect, &monitorRect);
+            scratchRect = getIntersection(&windowRect, &monitorRect);
 
             currentDim = scratchRect.w * scratchRect.h;
             overlapDim = overlapRect.w * overlapRect.h;
